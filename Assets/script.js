@@ -46,7 +46,7 @@ function resPrompt() {
     passRes = passRes.concat(resNumber);
   }
 
-  if (confirm("Inclue symbols in password? Ex. ! @ # $ % Click 'OK' for Yes and 'Cancel' for No.")) {
+  if (confirm("Include symbols in password? Ex. ! @ # $ % Click 'OK' for Yes and 'Cancel' for No.")) {
     passRes = passRes.concat(resSymbol);
   }
   return true;
