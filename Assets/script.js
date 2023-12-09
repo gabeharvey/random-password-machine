@@ -20,3 +20,32 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+function resPrompt() {
+  passRes [];
+  
+  passLength = parseInt(prompt("Please choose a password length between 8 characters and 128 characters by entering number of characters desired."));
+  
+  if (isNaN(passLength) || passLength > 128 || passLength < 8) {
+    alert("Password length must be between 8 characters and 128 characters. Please enter a number on the keyboard or number keypad.");
+    return false;
+  }
+
+  if (confirm("Include UPPERCASE letters in password? Please answer YES or NO.")) {
+    passRes = passRes.concat(resUpperCase);
+  }
+
+  if (confirm("Include lowercase letters in password? Please answer YES or NO")) {
+    passRes = passRes.concat(resLowerCase);
+  }
+
+  if (confirm("Include numbers in password? Please answer YES or NO")) {
+    passRes = passRes.concat(resNumber);
+  }
+
+  if (confirm("Inclue symbols in password? Ex. ! @ # $ % Please answer YES or NO")) {
+    passRes = passRes.concat(resSymbol);
+  }
+  return true;
+
+}
