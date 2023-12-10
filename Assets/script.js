@@ -26,6 +26,7 @@ function generatePassword () {
   return password;
 }
 
+// Series of prompts listed in following function
 function resPrompt() {
   passLength = parseInt(prompt("Please choose a password length between 8 characters and 128 characters by entering number of characters desired in the box below 👇."));
   
