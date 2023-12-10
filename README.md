@@ -14,7 +14,7 @@ Credits
 
 Assignment done in collaboration with Angela Cortes, Joshua Hale and Kalyn Sifuentes
 
-YouTube Link accessed: https://www.youtube.com/watch?v=v2jfGo7ztm8&t=1328s
+YouTube Link accessed for JavaScript Function guidance: https://www.youtube.com/watch?v=v2jfGo7ztm8&t=1328s
 
 Starter Code provided by: https://github.com/coding-boot-camp/friendly-parakeet.git
 
