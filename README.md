@@ -20,6 +20,7 @@ Screenshot
 
 Link to Website
 
+https://gabeharvey.github.io/random-password-machine/
 
 License
 
