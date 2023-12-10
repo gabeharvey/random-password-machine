@@ -6,26 +6,6 @@ let resNumber = ["0","1","2","3","4","5","6","7","8","9","10"];
 let resSymbol = ["!","@","#","$","%","^","&","*","(",")","_","+","{","}","|","[","]",":","<",">","?","="];
 let generateBtn = document.querySelector("#generate");
 
-// Functions listed below
-function writePassword() {
-  let validPass = resPrompt();
-  let passwordText = document.querySelector("#password");
-  
-  if(validPass) {
-  let finalPass = generatePassword();
-  passwordText.value = finalPass;
-  }
-}
-
-function generatePassword () {
-  let password = "";
-  for(let i = 0; i < passLength; i++) {
-    let randomPass = Math.floor(Math.random() * passRes.length);
-    password = password + passRes[randomPass];
-  }
-  return password;
-}
-
 // Series of prompts listed in following function
 function resPrompt() {
   passLength = parseInt(prompt("Please choose a password length between 8 characters and 128 characters by entering number of characters desired in the box below 👇."));
@@ -51,7 +31,26 @@ function resPrompt() {
     passRes = passRes.concat(resSymbol);
   }
   return true;
+}
 
+// Functions listed below
+function writePassword() {
+  let validPass = resPrompt();
+  let passwordText = document.querySelector("#password");
+  
+  if(validPass) {
+  let finalPass = generatePassword();
+  passwordText.value = finalPass;
+  }
+}
+
+function generatePassword () {
+  let password = "";
+  for(let i = 0; i < passLength; i++) {
+    let randomPass = Math.floor(Math.random() * passRes.length);
+    password = password + passRes[randomPass];
+  }
+  return password;
 }
 
 // Event Listener Added
