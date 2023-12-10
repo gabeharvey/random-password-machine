@@ -8,26 +8,26 @@ let generateBtn = document.querySelector("#generate");
 
 // Series of prompts listed in following function
 function resPrompt() {
-  passLength = parseInt(prompt("Please choose a password length between 8 characters and 128 characters by entering number of characters desired in the box below 👇."));
+  passLength = parseInt(prompt("👋Hello!👋 We will generate a password for you using the Random Password Machine. Please choose a your desired password length between 8 characters and 128 characters by entering number of characters in the box below 👇."));
   
   if (isNaN(passLength) || passLength > 128 || passLength < 8) {
     alert("🚫 Answer Invalid. 🚫 Please choose a number between 8 and 128 on the keypad. ex. 1️⃣2️⃣3️⃣");
     return false;
   }
 
-  if (confirm("Include UPPERCASE letters in password? Click 'OK' for Yes and 'Cancel' for No.")) {
+  if (confirm("Include UPPERCASE letters in your NEW password? Click 'OK' for Yes and 'Cancel' for No.")) {
     passRes = passRes.concat(resUpperCase);
   }
 
-  if (confirm("Include lowercase letters in password? Click 'OK' for Yes and 'Cancel' for No.")) {
+  if (confirm("Include lowercase letters in your NEW password? Click 'OK' for Yes and 'Cancel' for No.")) {
     passRes = passRes.concat(resLowerCase);
   }
 
-  if (confirm("Include numbers in password? Click 'OK' for Yes and 'Cancel' for No.")) {
+  if (confirm("Include numbers in your NEW password? Click 'OK' for Yes and 'Cancel' for No.")) {
     passRes = passRes.concat(resNumber);
   }
 
-  if (confirm("Include symbols in password? Ex. ! @ # $ % Click 'OK' for Yes and 'Cancel' for No.")) {
+  if (confirm("Include symbols in your NEW password? Ex. ! @ # $ % Click 'OK' for Yes and 'Cancel' for No.")) {
     passRes = passRes.concat(resSymbol);
   }
   return true;
